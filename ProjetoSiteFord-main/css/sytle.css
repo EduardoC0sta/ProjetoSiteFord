@@ -1,0 +1,60 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header Geral */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+/* Header Geral: Edição do menu de opções gerais na esqueda */
+.menu_geral {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 5%;
+}
+
+.menu_geral a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ford', 'Arial';
+}
+
+/* Header Geral: Edição da Logo ford centralizada no centro */
+.logo_principal_ford {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_principal_ford img {
+    height: 40px;
+    width: auto;
+}
+
+/* Header Geral: Edição do Login na direita */
+.login_ford {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login_ford a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ford', 'Arial';
+}
