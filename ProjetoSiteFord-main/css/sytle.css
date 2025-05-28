@@ -1,16 +1,13 @@
 body {
     margin: 0%;
     padding: 0%;
-    width: 100%;
-    height: 100%;
 }
 
 /* Header Geral */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
+    padding: 10px 50px;
+    font-family: 'Ford', 'Arial', sans-serif;
 }
 
 /* Header Geral: Edição do menu de opções gerais na esqueda */
@@ -25,9 +22,9 @@ header {
 .menu_geral a {
     text-decoration: none;
     cursor: pointer;
-    font-size: 20px;
     font-weight: bold;
-    font-family: 'Ford', 'Arial';
+    font-size: 20px;
+    color: #333;
 }
 
 /* Header Geral: Edição da Logo ford centralizada no centro */
@@ -54,7 +51,44 @@ header {
 .login_ford a {
     text-decoration: none;
     cursor: pointer;
-    font-size: 20px;
     font-weight: bold;
-    font-family: 'Ford', 'Arial';
+    font-size: 20px;
+    color: #333;
+}
+
+/* Footer Geral */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00095b;
+    height: 60px;
+    padding: 0 2%;
+}
+
+/*Footer Geral: Edição das redes sociais */
+.redes_sociais {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+    cursor: pointer;
+}
+
+.redes_sociais img {
+    width: 40px;
+    height: auto;
+}
+
+/* Footer Geral: Edição do copyright */
+.copyright_ford {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.copyright_ford img {
+    width: 90px;
+    height: auto;
 }
