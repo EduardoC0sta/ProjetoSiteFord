@@ -21,6 +21,8 @@ main {
 /* Definições do texto que descreve a imagem */
 .titulo_carrossel {
     text-align: center;
+    position: absolute;
+    display: flex;
 }
 
 .titulo_carrossel p {
@@ -33,19 +35,37 @@ main {
 /* Definições Botões para controlar os slides */
 .botao_carrossel {
     position: absolute;
-    top: 420px;
+    top: 430px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3%;
 }
 
-.botao_carrossel input[type="radio"] {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+.controle_carrossel::before {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 45px;
+    position: relative;
+    top: -10px;
+    margin: -15%;
     transition: all 0.3s ease;
 }
 
-.botao_carrossel input[type="radio"]:checked {
-    background-color: #0066ff;
+.botao_carrossel .controle_carrossel {
+    width: 85px;
+    height: 12px;
+    cursor: pointer;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box; 
+}
+
+.controle_carrossel button.ativo {
+    transform: scale(1.05); 
 }
