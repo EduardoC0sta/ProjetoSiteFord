@@ -3,11 +3,10 @@ let CarrosselArr = [];
 
 // Declaração dos itens do carrosel
 class CarrosselItem {
-    constructor(imagem, titulo, link, alinhamento = 'right') {
+    constructor(imagem, titulo, link,) {
         this.imagem = imagem;
         this.titulo = titulo;
         this.link = link;
-        this.alinhamento = alinhamento;
     }
 }
 
@@ -82,7 +81,6 @@ let carrosselArr = [
     new CarrosselItem("img/ford-ranger-2024.jpg", "Nova Ford Ranger", "veiculos.html"),
     new CarrosselItem("img/ford-territory-2024.jpg", "Nova Ford Territory", "veiculos.html"),
     new CarrosselItem("img/ford-raptor.jpg", "Nova Ford Raptor", "veiculos.html"),
-    new CarrosselItem("img/celso.jpg", "Celso", "veiculos.html"),
 ];
 
 // Iniciador do carrossel.
