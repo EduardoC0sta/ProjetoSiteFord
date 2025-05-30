@@ -40,14 +40,14 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 3%;
+    gap: 5%;
 }
 
 .controle_carrossel::before {
     content: '';
     display: block;
-    width: 110px;
-    height: 45px;
+    width: 150px;
+    height: 60px;
     position: relative;
     top: -10px;
     margin: -15%;
@@ -55,7 +55,7 @@ main {
 }
 
 .botao_carrossel .controle_carrossel {
-    width: 85px;
+    width: 120px;
     height: 12px;
     cursor: pointer;
     border: 1px solid #797979;
