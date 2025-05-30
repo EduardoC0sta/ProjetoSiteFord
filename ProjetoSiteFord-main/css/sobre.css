@@ -15,7 +15,7 @@ main {
   top: 0; left: 0;
   width: 100%;
   height: 545px;
-  transition: background-image 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /* Definições do texto que descreve a imagem */
@@ -63,7 +63,6 @@ main {
     padding: 0;
     margin: 0;
     outline: none;
-    box-sizing: border-box; 
 }
 
 .controle_carrossel button.ativo {
@@ -71,15 +70,33 @@ main {
 }
 
 /* Texto para indicar veiculos */
-
+.textos_sobre_nos h1 {
+    color: #00095b;
+}
 /* Edição botão para lançar em veiculos */
-.botao_redireciona_veiculos button {
+.botao_redireciona_veiculos {
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    background-color: #1351d8;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+
+.botao_redireciona_veiculos button {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #797979;
+    background-color: #00095b;
     padding: 10px 20px;
     border-radius: 15px;
-    width: 100%;
-    cursor: pointer;    
+    width: 50%;
+    font-family: 'Ford', 'Arial', 'sans-serif';
+    cursor: pointer;
+}
+
+.botao_redireciona_veiculos button:hover {
+    transform: scale(1.1);
+    background-color: #1351d8;
+    transition: all 0.5s ease;
 }
