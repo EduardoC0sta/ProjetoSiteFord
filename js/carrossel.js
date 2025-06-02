@@ -102,24 +102,30 @@ let veiculos = {
     index: 0,
     itens: [],
     container: null,
-    botoes: [],
+    botaoEsquerda: null,
+    botaoDireita: null,
 
     start: function (itens) {
         this.itens = itens;
         this.container = document.querySelector(".lista-veiculos-slider");
-        this.botoes = document.querySelectorAll(".controle-slider");
+
+        this.botaoEsquerda = document.querySelector(".controle-esquerda");
+        this.botaoDireita = document.querySelector(".controle-direita");
 
         //Configuração eventos para botão Slider
-        this.botoes.forEach((botao, index) => {
-            botao.addEventListener('click', () => {
-                this.index = index;
-                this.renderItem(this.index);
-                this.atualizarBotoesAtivos();
-            });
+        this.botaoEsquerda.addEventListener('click', () => {
+            // Vai para o item anterior
+            this.index = (this.index - 1 + this.itens.length) % this.itens.length;
+            this.renderItem(this.index);
+        });
+
+        this.botaoDireita.addEventListener('click', () => {
+            // Vai para o próximo item
+            this.index = (this.index + 1) % this.itens.length;
+            this.renderItem(this.index);
         });
 
         this.renderItem(this.index);
-        this.atualizarBotoesAtivos();
     },
 
     renderItem: function (index) {
@@ -131,16 +137,10 @@ let veiculos = {
                 <img src="${item.imagem}" alt="Veículo ${index + 1}">
             </a>
         `;
-    },
-
-    atualizarBotoesAtivos: function () {
-        this.botoes.forEach((botao, i) => {
-            botao.classList.toggle('ativo', i === this.index);
-        });
     }
 };
 
-// Itens do carrossel usando a classe correta
+// Itens do carrossel
 let itensVeiculos = [
     new veiculosItens("img/ford-xl-cabine-veiculos.jpg", "veiculos.html"),
     new veiculosItens("img/ford-storm-veiculos.jpg", "veiculos.html"),
