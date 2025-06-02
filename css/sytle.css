@@ -11,7 +11,7 @@ header {
 }
 
 /* Header Geral: Edição do menu de opções gerais na esqueda */
-.menu_geral {
+.menu-geral {
     display: flex;
     align-items: center;
     text-align: center;
@@ -19,7 +19,7 @@ header {
     gap: 5%;
 }
 
-.menu_geral a {
+.menu-geral a {
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
@@ -28,27 +28,27 @@ header {
 }
 
 /* Header Geral: Edição da Logo ford centralizada no centro */
-.logo_principal_ford {
+.logo-principal-ford {
     flex: 4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo_principal_ford img {
+.logo-principal-ford img {
     height: 40px;
     width: auto;
 }
 
 /* Header Geral: Edição do Login na direita */
-.login_ford {
+.login-ford {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.login_ford a {
+.login-ford a {
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
@@ -67,7 +67,7 @@ footer {
 }
 
 /*Footer Geral: Edição das redes sociais */
-.redes_sociais {
+.redes-sociais {
     display: flex; 
     align-items: center;
     justify-content: flex-start;
@@ -75,20 +75,20 @@ footer {
     cursor: pointer;
 }
 
-.redes_sociais img {
+.redes-sociais img {
     width: 40px;
     height: auto;
 }
 
 /* Footer Geral: Edição do copyright */
-.copyright_ford {
+.copyright-ford {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
 }
 
-.copyright_ford img {
+.copyright-ford img {
     width: 90px;
     height: auto;
 }
