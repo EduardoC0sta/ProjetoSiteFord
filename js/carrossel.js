@@ -142,9 +142,9 @@ let veiculos = {
 
 // Itens do carrossel
 let itensVeiculos = [
-    new veiculosItens("img/ford-xl-cabine-veiculos.jpg", "veiculos.html"),
-    new veiculosItens("img/ford-storm-veiculos.jpg", "veiculos.html"),
-    new veiculosItens("img/ford-xls-diesel-veiculos.jpg", "veiculos.html"),
+    new veiculosItens("img/ford-xl-cabine-veiculos.jpg", "#"),
+    new veiculosItens("img/ford-storm-veiculos.jpg", "#"),
+    new veiculosItens("img/ford-xls-diesel-veiculos.jpg", "#"),
 ];
 
 // Inicialização
