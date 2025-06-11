@@ -13,7 +13,7 @@ class CarrosselItem {
 // Objeto responsável pelo carrossel
 let Carrossel = {
     index: 0,
-    intervalo: 3000,
+    intervalo: 3500,
     itens: [],
     container: null,
     tituloContainer: null,
@@ -142,8 +142,8 @@ let veiculos = {
 
 // Itens do carrossel
 let itensVeiculos = [
-    new veiculosItens("img/ford-xl-cabine-veiculos.jpg", "#"),
-    new veiculosItens("img/ford-storm-veiculos.jpg", "#"),
+    new veiculosItens("img/ford-ranger-veiculos.png", "#"),
+    new veiculosItens("img/ford-ranger-raptor-veiculos.png", "#"),
     new veiculosItens("img/ford-xls-diesel-veiculos.jpg", "#"),
 ];
 
